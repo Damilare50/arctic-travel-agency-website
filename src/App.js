@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import NavBar from './components/NavBar';
+import HeroContainer from './components/HeroContainer';
+import HeroText from './components/HeroText/HeroText';
+import HeroDetails from './components/HeroDetails';
+import ExperienceDetails from './components/ExperienceDetails';
+import Passes from './components/Passes';
+import Footer from './components/Footer';
+import Copyright from './components/Copyright';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HeroContainer>
+        <NavBar />
+        <HeroText />
+      </HeroContainer>
+      <HeroDetails />
+      <ExperienceDetails />
+      <Passes />
+      <Footer />
+      <Copyright />
+    </>
   );
 }
 
