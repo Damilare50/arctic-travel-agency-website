@@ -51,6 +51,42 @@ const Wrapper = styled.article`
     color: #FFFFFF;
   }
 
+  @media screen and (max-width: 800px) {
+    div {
+      padding-left: 60px;
+
+      h2 {
+        font-size: 60px;
+        line-height: 80px;
+        width: 80%;
+      }
+
+      button {
+        width: 250px;
+        height: 68px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    height: 650px;
+
+    div {
+      padding-left: 30px;
+
+      h2 {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 60px;
+      }
+
+      button {
+        width: 200px;
+        padding: 15px 32px;
+        height: 60px;
+      }
+    }
+  }
 `
 
 const Passes = () => {

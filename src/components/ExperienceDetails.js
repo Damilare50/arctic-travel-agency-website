@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const Wrapper = styled.article`
   width: 100%;
-  /* height: calc(700px - 240px); */
   display: flex;
   flex-direction: column;
   padding-top: 120px;
@@ -52,6 +51,31 @@ const Wrapper = styled.article`
     color: #000000;
     margin-bottom: 0;
     padding-bottom: 0;
+  }
+
+  @media screen and (max-width: 800px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    h2, h4, h6 {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h2, h6 {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 125%;
+    }
+
+    h4 {
+      font-weight: 300;
+      font-size: 22px;
+    }
   }
 `
 

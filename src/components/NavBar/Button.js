@@ -19,11 +19,21 @@ const PriButton = styled.button`
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
+
+  @media screen and (max-width: 800px) {
+    padding: 22px 25px;
+    margin-left: 0;
+    margin-bottom: 20px;
+
+    .disp-none {
+      display: none;
+    }
+  }
 `
 
-const Button = ({text}) => {
+const Button = ({text, respOpen}) => {
   return (
-    <PriButton>{text}</PriButton>
+    <PriButton className={respOpen ? '' : 'disp-none'}>{text}</PriButton>
   )
 }
 

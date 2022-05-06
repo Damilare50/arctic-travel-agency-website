@@ -25,11 +25,25 @@ const Navmenu = styled.ul`
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+
+    .disp-none {
+      display: none;
+    }
+
+    li {
+      width: 100%;
+      margin-right: 0;
+      padding: 20px 0;
+    }
+  }
 `
 
-const NavLink = () => {
+const NavLink = ({respOpen}) => {
   return (
-    <Navmenu>
+    <Navmenu className={respOpen ? '' : 'disp-none'}>
       <li>
         <img src={LogoIcon} alt="logo-icon" />&nbsp;Arctic Travels
       </li>

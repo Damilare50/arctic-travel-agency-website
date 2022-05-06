@@ -19,11 +19,10 @@ const Wrapper = styled.article`
   }
 
   @media screen and (max-width: 700px) {
-  div {
+    div {
       display: flex;
       width: 200px;
       flex-direction: column;
-      margin-top: 20px;
     }
   }
 `
