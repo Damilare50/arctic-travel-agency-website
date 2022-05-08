@@ -61,6 +61,7 @@ const Img = styled.article`
         font-size: 16px;
         line-height: 24px;
         color: #FFFFFF;
+        cursor: pointer;
       }
     }
   }
@@ -116,6 +117,7 @@ const HoverImg = styled.div`
       font-size: 16px;
       line-height: 24px;
       color: #FFFFFF;
+      cursor: pointer;
     }
   }
 `

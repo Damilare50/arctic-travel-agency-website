@@ -21,7 +21,7 @@ function App() {
       <HeroDetails />
       <ExperienceDetails />
       <ImageFrameContainer />
-      <PhotoGallery />
+      {/* <PhotoGallery /> */}
       <Passes />
       <Footer />
       <Copyright />

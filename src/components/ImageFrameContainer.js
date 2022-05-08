@@ -11,7 +11,9 @@ const Wrapper = styled.article`
   flex-wrap: wrap;
   width: 100%;
 
-
+  @media screen and (max-width: 400px) {
+    flex-direction: column;
+  }
 `
 
 const ImageFrameContainer = () => {

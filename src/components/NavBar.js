@@ -44,12 +44,15 @@ const NavBar = () => {
   const toggleNav = () => {
     setIsOpen(isOpen => !isOpen);
   }
-  console.log(isOpen);
+  // console.log(isOpen);
+  const closeNav = () => {
+    setIsOpen(false);
+  }
 
   return (
     <Menu>
-      <NavLink respOpen={isOpen} className={isOpen ? '' : 'disp-none'} />
-      <Button respOpen={isOpen} className={isOpen ? '' : 'disp-none'} text="Sign In" />
+      <NavLink onClick={closeNav} respOpen={isOpen} className={isOpen ? '' : 'disp-none'} />
+      <Button onClick={closeNav} respOpen={isOpen} className={isOpen ? '' : 'disp-none'} text="Sign In" />
       <FiMenu onClick={toggleNav} className='hamburger' />
     </Menu>
   )

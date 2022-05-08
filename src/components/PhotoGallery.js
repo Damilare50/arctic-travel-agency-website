@@ -8,7 +8,7 @@ import GalleryImg3 from '../images/gallery-img-3.png';
 
 const Wrapper = styled.article`
   display: grid;
-  grid-template-columns: auto 47%;
+  grid-template-columns: 50% 47%;
   padding: 85px 120px 85px 120px;
 
 
